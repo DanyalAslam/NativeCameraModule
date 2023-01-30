@@ -15,13 +15,15 @@ Camera Screen: A Camera Screen camera view that allows users to take photos, a p
 Result Screen: A screen that displays the photos taken in the app
 Press Retake button to take photo again, it will pop back to Camera Screen, while use photo will do nothing
 
+Native Side Implementation
+CameraView class : This is the native swift class for camera implementation
+CaneraViewManager : This is the manager class for cameraView swift class, all declarations are here
+
 Features
 Native camera integration using cameraView.swift, here I am using cameraView.swift as native class for iOS camera
 calling Native Camera class using Bridging to React Native side, 
 
 const CameraView = requireNativeComponent(`CameraView`) // allows us to calling native module to React Native side
-
-
 
 Dependencies
 React Native
